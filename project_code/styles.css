@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Neue', cursive;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #ff6b6b;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.interest-input {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#interestInput {
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: 2px solid #4ecdc4;
+    width: 60%;
+    font-family: 'Comic Neue', cursive;
+}
+
+.generate-btn {
+    background-color: #4ecdc4;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+    font-family: 'Comic Neue', cursive;
+}
+
+.generate-btn:hover {
+    transform: scale(1.05);
+}
+
+.word-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.word-image {
+    margin-bottom: 20px;
+}
+
+.word-image img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 10px;
+}
+
+.word-content h2 {
+    font-size: 2rem;
+    color: #4ecdc4;
+    margin-bottom: 15px;
+}
+
+.pronunciation-controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.pronounce-btn, .record-btn {
+    background-color: #4ecdc4;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.pronounce-btn:hover, .record-btn:hover {
+    transform: scale(1.05);
+}
+
+.record-btn {
+    background-color: #ff6b6b;
+}
+
+.speaker-icon, .mic-icon {
+    margin-right: 8px;
+}
+
+.feedback {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    min-height: 40px;
+}
+
+.feedback.correct {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.feedback.incorrect {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.nav-btn {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.nav-btn:hover {
+    background-color: #ff5252;
+}
+
+.progress-container {
+    text-align: center;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #4ecdc4;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+#progressText {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Summary Page Styles */
+.summary-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 2rem;
+}
+
+.summary-content {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.summary-content h2 {
+    color: #4CAF50;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.summary-stats {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.summary-stats p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+#restartBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#restartBtn:hover {
+    background-color: #45a049;
+}
+
+.practice-words {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+.practice-words h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.practice-words ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.word-score {
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.word-score.perfect {
+    background-color: #d4edda;
+    color: #155724;
+    border-left: 4px solid #28a745;
+}
+
+.word-score.needs-practice {
+    background-color: #fff3cd;
+    color: #856404;
+    border-left: 4px solid #ffc107;
+}
+
+.word-score.no-attempt {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-left: 4px solid #dc3545;
+}
+
+.score-indicator {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.7);
+} 

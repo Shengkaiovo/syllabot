@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Word Pronunciation Helper</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Word Pronunciation Helper</h1>
+            <div class="interest-input">
+                <input type="text" id="interestInput" placeholder="Enter an area you're interested in (e.g., space, dinosaurs, ocean)">
+                <button id="generateWordsBtn" class="generate-btn">Generate Words</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="word-card">
+                <div class="word-image">
+                    <img id="wordImage" src="" alt="Word Image">
+                </div>
+                <div class="word-content">
+                    <h2 id="wordText">Word</h2>
+                    <div class="pronunciation-controls">
+                        <button id="pronounceBtn" class="pronounce-btn">
+                            <span class="speaker-icon">🔊</span>
+                            Listen
+                        </button>
+                        <button id="recordBtn" class="record-btn">
+                            <span class="mic-icon">🎤</span>
+                            Record
+                        </button>
+                    </div>
+                    <div id="feedback" class="feedback"></div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button id="prevBtn" class="nav-btn">← Previous</button>
+                <button id="nextBtn" class="nav-btn">Next →</button>
+            </div>
+        </main>
+
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress" id="progressBar"></div>
+            </div>
+            <p>Progress: <span id="progressText">0/0</span></p>
+        </div>
+    </div>
+
+    <!-- Add Google AI JavaScript SDK -->
+    <script src="https://www.gstatic.com/ai/generativelanguage/v1/generativelanguage.js"></script>
+    <script type="module" src="/script.js"></script>
+</body>
+</html> 
